@@ -1,0 +1,410 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+
+}
+/* Goofle font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --color-1:#fff;
+    --color-2:rgb(255,255,255,0.6);
+    --color-3:#000;
+    --color-4:#00002c;
+    --color-5:#000024;
+    --color-6:#00b7c5;
+    --color-7:#08d3d3;
+}
+header{
+    width:100%;
+    height: 80vh;
+    background: var(--color-4);
+    overflow: hidden;
+}
+header nav{
+    width: 70%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul{
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+}
+header nav ul li{
+        position: relative;
+        padding: 3px 15px;
+        z-index: 2;
+ }
+ header nav ul li:nth-child(1)::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(154, 154, 150,.5);
+    top: 6px;
+    right: 9px;
+    z-index: -1;
+}
+ header nav ul li a{
+  text-decoration: none;
+  font-size: 12px;
+    color: var(--color-1);
+    font-weight: 600;
+    transition: .3s linear;
+}
+header nav ul li a:hover{
+     color: var(--color-2);   
+}
+  header nav button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700px;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  
+  header nav button:hover{
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+  }
+
+  /* section start  */
+  
+header section{
+    width: 70%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header section .content , .img_data {
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: var(--color-1);
+   
+}
+header section .content h1{
+    font-size: 45px;
+    line-height: 55px;
+    border-radius: 10px;
+}
+header section .content p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+header section .content button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s linear;
+  }
+  
+  header section .content button:hover{
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+  }
+  header section .img_data img{
+    width: 530px;
+    animation: earth 120s linear infinite ;
+  }
+  @keyframes earth {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+
+  /* aside bstartr */
+
+  aside{
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: var(--color-1);
+    background: var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+aside h1{
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 60px;
+
+}
+aside h1::before{
+width: 50px;
+height: 3.5px;
+position: absolute;
+content: '';
+bottom: -10px;
+left: 100px;
+background: var(--color-6);
+
+}
+
+aside p{
+    font-size: 10px;
+    text-align: center;
+}
+aside img{
+    position: relative;
+    width: 100%;
+    margin-top: -60px;
+}
+aside .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 100%;
+}
+
+aside .time span{
+    font-size: 40px;
+    font-weight: 900px;
+    margin: 0px 25px;
+    color: var(--color-7);
+}
+aside .time span h6{
+    font-size: 11px;
+    text-align: center;
+    color: #a5a5a5;
+}
+aside .time h5{
+    font-size: 25px;
+    margin-top: -16px;
+}
+aside button{
+    padding: 12px 25px;
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+    border-radius: 30px;
+    color: var(--color-1);
+    font-size: 11px;
+    font-weight: 700px;
+    cursor: pointer;
+    margin: 40px 0px 30px 0px;
+    transition: .3s linear;
+  }
+  
+  aside button:hover{
+    background: linear-gradient(0deg,#ae2c86,#d0498d);
+  }
+  .app{
+    width: 100%;
+    height:auto;
+    background: var(--color-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .app .app_img_bx , .app_content_bx{
+    position: relative;
+    width:35%;
+    height: auto;
+    color: var(--color-1);
+    margin-top: 40px;
+  }
+  .app .app_img_bx {
+    width: 30%;
+    
+  }
+  .app .app_img_bx img{
+    width: 90%;
+    
+  }
+  .app .app_content_bx h1{
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .app .app_content_bx h1::before{
+    width: 50px;
+    height: 3.5px;
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0px;
+    background: var(--color-6);
+    border-radius: 10px;
+
+}
+.app .app_content_bx p{
+  margin-top: 60px;
+  font-size: 13px;
+  word-break: break-all;
+}
+.app .app_content_bx img{
+ margin-top: 20px;
+}
+
+
+/* Crypto Converter */
+.converter{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 50px;
+
+}
+.converter{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-bottom: 50px;
+  background: url("Images\ HTML/crypto bg.jpg")no-repeat center center/cover;
+  z-index: -1;
+
+}
+.converter h1{
+  position: relative;
+  font-size: 25px;
+  padding-top: 50px;
+  align-items: center;
+  color: var(--color-1);
+  text-align: center;
+}
+.converter h1::before{
+  width: 50px;
+  height: 3.5px;
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  left: 49%;
+  background: var(--color-6);
+  border-radius: 10px;
+
+}
+.converter .cards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.converter .cards .card {
+  position: relative;
+  width: 380px;
+  height: 210px;
+}
+.converter .cards .card2 {
+  height: 50px;
+  width: 50px;
+  margin: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-6);
+  color: var(--color-1);
+}
+
+.converter .cards .card::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00002c80;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.converter .cards .card .select{
+  display: flex;
+  align-items: center;
+  color: var(--color-1);
+  margin: 30px 20px 0px 30px;
+}
+.converter .cards .card .select h4{
+      font-size: 20px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-6);
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px rgb(8, 211, 211,.5);
+}
+.converter .cards .card .select .select1 {
+     margin-left: 20px;
+}
+.converter .cards .card .select .select1 h6{
+    color: var(--color-1);
+    margin-left: 5px;
+  }
+
+  .converter .cards .card .select .select1 select{
+     width: 250px;
+     background: transparent;
+     border: 0;
+     outline: 0;
+     color: var(--color-1);
+     font-family: "Poppins", sans-serif;
+     font-weight: 900;
+     font-size: 18px;
+    }
+
+ .converter .cards .card .select .select1 select option{
+     background: var(--color-5);
+     }
+ .converter .cards .card .enter_bitcoin{
+  margin: 40px 40px 5px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d0498d;
+  color: var(--color-1);
+ }
+ .converter .cards .card .enter_bitcoin input{
+  
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--color-1);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }
+ .converter .cards .card p{
+  margin: 0px 40px;
+  font-size: 12px;
+  color: var(--color-1);
+ }
+.rocket{
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: url("Images\ HTML/rocket_bg.png")no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rocket .rocket_content , .rocket_img{
+    width: 32%;
+    height: auto;
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+}
+ 
