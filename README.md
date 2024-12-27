@@ -88,9 +88,6 @@ For any inquiries or feedback, reach out at:
 - ✉️ priteshpagar9199@gmail.com
 - 🌐 Your Portfolio
 
-## 📜 License
-This project is licensed under the MIT License. 📝
-
 
 ## 🤝 Acknowledgements
 
