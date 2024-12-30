@@ -7,16 +7,7 @@ This project is a modern web application inspired by Crypto.com, featuring sleek
 
 [<img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge&logo=appveyor" alt="Live Demo">](https://crypto-website-drab.vercel.app/)
 
-## 🖼️ Screenshots
 
-### 📊 Landing Page
-![Landing Page](<YOUR_SCREENSHOT_URL>)
-
-### 💸 Crypto Pricing
-![Crypto Pricing](<YOUR_SCREENSHOT_URL>)
-
-### 🌐 About Us Section
-![About Us](<YOUR_SCREENSHOT_URL>)
 
 ---
 ## ✨ Features
@@ -86,7 +77,6 @@ Contributions are welcome! 🎉 If you'd like to make improvements:
 📬 Contact
 For any inquiries or feedback, reach out at:
 - ✉️ priteshpagar9199@gmail.com
-- 🌐 Your Portfolio
 
 
 ## 🤝 Acknowledgements
